@@ -60,12 +60,12 @@ public class StudentManagement {
 			Class.forName(Pro.getProperty("driver"));
 			Con = DriverManager.getConnection(Pro.getProperty("url"), Pro);
 			Ptsm = Con.prepareStatement("INSERT INTO student_management_system VALUES(?,?,?,?,?,?,?,?)");
-			System.out.println("Enter Number of Rows You want to Insert:");
+			System.out.println("Enter Number of Rows You want to Insert :");
 			System.out.println("-------------------------------------------");
 			int Length = Sc.nextInt();
 			// S_Id, S_Fname, S_Lname, S_Gendar, S_MobileNo, S_Fees, S_Address
 			for (int i = 0; i < Length; i++) {
-				System.out.println("Enter Student ID");
+				System.out.println("Enter Student ID ");
 				int Id = Sc.nextInt();
 				System.out.println("-------------------------------------------");
 				System.out.println("Enter Student First Name");
